@@ -6,7 +6,7 @@ int main(void){
     sqlite3_stmt* stmt = 0;
     int retcode;
     // create a databse connection
-    retcode = sqlite3_open("testdb", &db);
+    retcode = sqlite3_open("test.db", &db);
 
     if(retcode != SQLITE_OK){
         printf("%d,%d\n", retcode,SQLITE_OK);
